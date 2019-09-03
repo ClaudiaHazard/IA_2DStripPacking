@@ -1,0 +1,13 @@
+EXEC = tabuSearch
+ITER = 5000
+INSTANCIA =
+
+
+.PHONY all:
+all:
+	g++ TabuSearch.cpp -o $(EXEC) -Wall -std=gnu++11
+
+
+.PHONY run:
+run:
+	./$(EXEC) $(INSTANCIA) $(ITER) > $(INSTANCIA).OUTPUT
